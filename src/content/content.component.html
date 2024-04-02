@@ -1,0 +1,46 @@
+
+<style>
+    table,td,th{
+      border: 1px solid black;
+      padding: 5px;
+      
+    }
+    table,td{
+      background-color: white;
+    }
+  </style>
+<!-- associate-details.component.html -->
+<div class="content-body">
+    <div style="margin: 10px; margin-top: 20px; background-color: #ecf0f3; padding: 10px;">
+      <h1 style="background-color: #ecf0f3; color: black;">Associate Details</h1>
+    </div>
+    <div style="margin-left: 10px; padding: 10px; background-color:#ecf0f3 ;">
+      <table style="width:100%; background-color: white; color: black; border: 1px solid black;">
+        <tr style="border: 1px solid black; padding:5px;">
+          <th style="border: 1px solid black;">Emplopyee ID</th>
+          <th style="border: 1px solid black;">Associate</th>
+          <th style="border: 1px solid black;">Start Date</th>
+          <th style="border: 1px solid black;">Exp Lvl</th>
+          <th style="border: 1px solid black;">Designation</th>
+          <th style="border: 1px solid black;">Project</th>
+          <th style="border: 1px solid black;">Squad</th>
+          <th style="border: 1px solid black;">Location</th>
+          <th style="border: 1px solid black;">VP</th>
+        </tr>
+        <!-- Use *ngFor directive to loop over the tableData array -->
+        <tr *ngFor="let data of tableData">
+          <!-- Use property binding to dynamically populate table cells -->
+          <td style="border: 1px solid black;">{{ data.employeeId }}</td>
+          <td style="border: 1px solid black;">{{ data.associate }}</td>
+          <td style="border: 1px solid black;">{{ data.startDate }}</td>
+          <td style="border: 1px solid black;">{{ data.expLevel }}</td>
+          <td style="border: 1px solid black;">{{ data.designation }}</td>
+          <td style="border: 1px solid black;">{{ data.project }}</td>
+          <td style="border: 1px solid black;">{{ data.squad }}</td>
+          <td style="border: 1px solid black;">{{ data.location }}</td>
+          <td style="border: 1px solid black;">{{ data.vp }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  

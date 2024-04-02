@@ -1,0 +1,41 @@
+<div class="header">
+    <div class="header-content" style="background-color: #539516;"> 
+        <nav class="navbar navbar-expand">
+            <div class="collapse navbar-collapse justify-content-between">
+                <div class="header-left">
+                    <div class="dashboard_bar" >
+                        <p style="color: white;" class="animated-text">Resource  Management Tool</p>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .animated-text {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .animated-text::before {
+        content: '';
+        position: absolute;
+        bottom: -2px; /* Adjust the position of the underline */
+        left: 50%; /* Align the underline to the center of the text */
+        width: 0;
+        height: 2px; /* Height of the underline */
+        background-color: white;
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Add transition for width and position */
+        transform: translateX(-50%); /* Center the underline */
+    }
+
+    .animated-text:hover::before {
+        width: 100%; /* Expand the underline */
+        left: 50; /* Align the underline to the left */
+    }
+
+
+</style>

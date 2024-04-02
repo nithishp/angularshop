@@ -1,0 +1,43 @@
+<div class="nav-header" style="background-color: #539516;">
+    <a href="#" class="brand-logo">
+       
+  
+<h2 style="background-color: #539516; color: white;" class="brand-title mt-3 animated-text">Admin</h2>
+    </a>
+
+    <div class="nav-control">
+        <div class="hamburger">
+            <span class="line"></span><span class="line"></span><span class="line"></span>
+        </div>
+    </div>
+</div>
+<style>
+    .animated-text {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .animated-text::after {
+        content: '';
+        position: absolute;
+        bottom: -2px; /* Adjust the position of the underline */
+        left: 0; /* Align the underline to the left */
+        width: 100%; /* Set the width of the underline */
+        height: 2px; /* Height of the underline */
+        background-color: white;
+        transition: transform 0.3s ease; /* Add transition for transform */
+        transform: scaleX(0); /* Initially hide the underline */
+        transform-origin: left; /* Set the transform origin to left */
+    }
+
+    .animated-text:hover::after {
+        transform: scaleX(1); /* Expand the underline */
+    }
+    .line{
+        background-color: white !important;    
+        color: white !important;    
+    }
+    
+</style>
