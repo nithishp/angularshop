@@ -71,6 +71,10 @@
 @import url(../vendor/aos/css/aos.min.css);
 @import url(../vendor/perfect-scrollbar/css/perfect-scrollbar.css);
 @import url(../vendor/metismenu/css/metisMenu.min.css);
+
+body{
+  background-color: #ecf0f3 !important;
+}
 :root {
   --primary: #fc5130;
   --secondary: #864AD1;
